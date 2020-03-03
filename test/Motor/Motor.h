@@ -6,12 +6,17 @@
 class Motor {
 
  public:
-	// Constructor
-	Motor();
+	
+	Motor();                 // Constructor
 
-	void init(int STEP, int CHIPEN);
+	void init();
 
-	void rotateMotor();
+	void rotateMotor(int dir, float degrees, int speed);
+	
+ private:
+ 
+    int STEP = 1;            // GPIO pin 
+	int CHIPEN = 2;          // Chip enable 
  };
 
 #endif 

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 project(Motor_Test)
 
 add_library(
@@ -9,7 +9,5 @@ add_library(
 
 add_executable(Motor_Test Motor_test.cpp)
 target_link_libraries(Motor_Test PRIVATE Motor)
-find_library(wiringPi_LIB wiringPi)
-target_link_libraries(Motor_Test ${wiringPi_LIB})
+target_link_libraries(Motor_Test PRIVATE wiringPi)
 
-//target_link_libraries(Test_Motor PRIVATE wiringPi)

@@ -4,14 +4,11 @@
 #include <wiringPi.h>
 #include "Motor.h"
 
-#define STEP 1
-#define CHIPEN 2
-
 // Constructor 
 Motor::Motor(){}
 
-void Motor::init(int STEP, int CHIPEN){
-  wiringPiSetup () ;
+void Motor::init(){
+  wiringPiSetup ();
   pinMode (STEP, OUTPUT) ;
   pinMode (CHIPEN, OUTPUT) ;
  }
