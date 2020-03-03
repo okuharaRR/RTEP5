@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mika/Documents/RTEP5/test/Motor/Motor.h
+
+/home/mika/Documents/RTEP5/test/Motor/Motor_test.cpp
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+wiringPi.h
+-
+Motor.h
+/home/mika/Documents/RTEP5/test/Motor/Motor.h
+
