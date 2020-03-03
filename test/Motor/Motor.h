@@ -15,7 +15,7 @@ class Motor {
 	
  private:
  
-    int STEP = 1;            // GPIO pin 
+    int STEP = 1;            // GPIO pin for motor enable
 	int CHIPEN = 2;          // Chip enable 
  };
 

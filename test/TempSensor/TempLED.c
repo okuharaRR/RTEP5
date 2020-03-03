@@ -65,8 +65,6 @@ int main (void) {
    printf("Temp: %.3f C  ", tempC / 1000);
    printf("%.3f F\n\n", (tempC / 1000) * 9 / 5 + 32);
    
-   //printf("Test: %.3f \n\n", tempC);
-   
    if (tempC > 25000.0) 
    {
      TempReached=!TempReached;

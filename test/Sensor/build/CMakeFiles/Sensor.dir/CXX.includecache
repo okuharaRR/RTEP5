@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mika/Documents/RTEP5/test/Sensor/Sensor.cpp
+stdio.h
+-
+dirent.h
+-
+string.h
+-
+fcntl.h
+-
+stdlib.h
+-
+unistd.h
+-
+wiringPi.h
+-
+Sensor.h
+/home/mika/Documents/RTEP5/test/Sensor/Sensor.h
+
+/home/mika/Documents/RTEP5/test/Sensor/Sensor.h
+
