@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/RealTime_Motor_Test.dir/RealTime_Motor_test.cpp.o  -o RealTime_Motor_Test libRealTime_Motor.a -lwiringPi -lpthread 
