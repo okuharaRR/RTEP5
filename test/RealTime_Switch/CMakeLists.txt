@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 2.8.9)
+project(RealTime_Switch_Test)
+
+add_library(
+	RealTime_Switch
+	RealTime_Switch.cpp
+	RealTime_Switch.h
+	)
+
+add_executable(RealTime_Switch_Test RealTime_Switch_test.cpp)
+target_link_libraries(RealTime_Switch_Test  PRIVATE RealTime_Switch)
+target_link_libraries(RealTime_Switch_Test  PRIVATE wiringPi)
+
+set (CMAKE_CXX_STANDARD 11)
+target_link_libraries(RealTime_Switch_Test  PRIVATE cpptimer)
+
+add_library(cpptimer STATIC CppTimer.cpp)
+target_link_libraries(cpptimer  PRIVATE rt)

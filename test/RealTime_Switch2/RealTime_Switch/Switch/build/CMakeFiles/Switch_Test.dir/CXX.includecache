@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mika/Documents/RTEP5/test/Switch/Switch.h
+
+/home/mika/Documents/RTEP5/test/Switch/Switch_test.cpp
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+wiringPi.h
+-
+Switch.h
+/home/mika/Documents/RTEP5/test/Switch/Switch.h
+

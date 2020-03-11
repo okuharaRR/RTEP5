@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mika/Documents/RTEP5/test/RealTime_Switch/CppTimer.cpp
+CppTimer.h
+/home/mika/Documents/RTEP5/test/RealTime_Switch/CppTimer.h
+
+/home/mika/Documents/RTEP5/test/RealTime_Switch/CppTimer.h
+stdlib.h
+-
+unistd.h
+-
+stdio.h
+-
+signal.h
+-
+time.h
+-
+
