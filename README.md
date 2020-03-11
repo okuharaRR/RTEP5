@@ -18,4 +18,4 @@ With so many coffee machines available to satisfy every variety of coffee that a
 ## Available Content
 Slides from the pitch presentation and the initial design concept can be found in the Wiki.
 
-Further content will be uploaded as the project progresses.
+Further content will be uploaded as the project progresses. :)
