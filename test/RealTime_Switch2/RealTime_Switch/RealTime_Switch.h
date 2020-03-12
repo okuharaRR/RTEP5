@@ -5,6 +5,7 @@
 
 #include "CppTimer.h"
 
+
 class Relay : public CppTimer {
 
 public:
@@ -12,6 +13,11 @@ public:
 	void on();
 	
 	void timerEvent();
+	
+private:
+
+	int relay = 3;            // GPIO pin for Relay
+
 };
 	
 class Valve1 : public CppTimer {
@@ -21,6 +27,10 @@ class Valve1 : public CppTimer {
 	void on();
 	
 	void timerEvent();
+	
+private:
+
+	int valve1 = 4;           // GPIO pi for valve 1
 };
 	
 class Valve2 : public CppTimer {
@@ -30,6 +40,10 @@ class Valve2 : public CppTimer {
 	void on();
 	
 	void timerEvent();
+	
+ private:
+	
+	int valve2 = 5;
 };
 
 #endif 

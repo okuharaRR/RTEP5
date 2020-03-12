@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/mika/Documents/RTEP5/test/RealTime_Switch/CppTimer.h
+/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CppTimer.h
 stdlib.h
 -
 unistd.h
@@ -18,7 +18,11 @@ signal.h
 time.h
 -
 
-/home/mika/Documents/RTEP5/test/RealTime_Switch/RealTime_Switch_test.cpp
+/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/RealTime_Switch.h
+CppTimer.h
+/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CppTimer.h
+
+/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/RealTime_Switch_test.cpp
 stdio.h
 -
 unistd.h
@@ -29,6 +33,8 @@ thread
 -
 wiringPi.h
 -
+RealTime_Switch.h
+/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/RealTime_Switch.h
 CppTimer.h
-/home/mika/Documents/RTEP5/test/RealTime_Switch/CppTimer.h
+/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CppTimer.h
 

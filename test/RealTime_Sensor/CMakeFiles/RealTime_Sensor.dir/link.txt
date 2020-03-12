@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRealTime_Sensor.a  CMakeFiles/RealTime_Sensor.dir/RealTime_Sensor.cpp.o
+/usr/bin/ranlib libRealTime_Sensor.a

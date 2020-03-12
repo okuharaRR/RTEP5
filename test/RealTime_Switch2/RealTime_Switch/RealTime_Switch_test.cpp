@@ -10,7 +10,6 @@ int relay = 3;            // GPIO pin for Relay
 int valve1 = 4;           // GPIO pi for valve 1
 int valve2 = 5;
 
-
 int main( int argc, const char* argv[] ) {
 	
 	wiringPiSetup ();
