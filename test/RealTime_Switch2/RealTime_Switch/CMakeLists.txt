@@ -8,11 +8,11 @@ add_library(
 	)
 
 add_executable(RealTime_Switch_Test RealTime_Switch_test.cpp)
-target_link_libraries(RealTime_Switch_Test  PRIVATE RealTime_Switch)
-target_link_libraries(RealTime_Switch_Test  PRIVATE wiringPi)
+target_link_libraries(RealTime_Switch_Test PRIVATE RealTime_Switch)
+target_link_libraries(RealTime_Switch_Test PRIVATE wiringPi)
 
 set (CMAKE_CXX_STANDARD 11)
-target_link_libraries(RealTime_Switch_Test  PRIVATE cpptimer)
+target_link_libraries(RealTime_Switch_Test PRIVATE cpptimer)
 
 add_library(cpptimer STATIC CppTimer.cpp)
-target_link_libraries(cpptimer  PRIVATE rt)
+target_link_libraries(cpptimer PRIVATE rt)
