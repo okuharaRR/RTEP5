@@ -6,10 +6,6 @@
 #include <chrono>
 #include "RealTime_Motor.h"
 
-
-//#include <iostream>
-//using namespace std;
-
 int main (int argc, const char* argv[] ) {
 
   Motor motor(1, 90, 50);

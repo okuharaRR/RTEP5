@@ -28,18 +28,17 @@ void Motor::init(){
   //}
 
 void Motor:: run(){
+  
+  printf("Running in a thread\n");
 
   digitalWrite (CHIPEN, HIGH);
-  float stepperPeriod = 200 / speed;
+  int stepperPeriod = 200 / speed;
   int pulses = degrees / 0.9;
   for(int i = 0; i < pulses; i++){
     digitalWrite (STEP, HIGH);
-    delay(stepperPeriod/2);
-    //std::this_thread::sleep_for(std::chrono::milliseconds(stepperPeriod/2));
+    std::this_thread::sleep_for(std::chrono::milliseconds(stepperPeriod/2));
     digitalWrite (STEP, LOW);
-    delay(stepperPeriod/2);
-    //std::this_thread::sleep_for(std::chrono::milliseconds(stepperPeriod/2));
-    
+    std::this_thread::sleep_for(std::chrono::milliseconds(stepperPeriod/2));
     }
     
   }
