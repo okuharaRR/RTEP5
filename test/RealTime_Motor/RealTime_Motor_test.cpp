@@ -8,7 +8,7 @@
 
 int main (int argc, const char* argv[] ) {
 
-  Motor motor(1, 90, 50);
+  Motor motor(1, 90, 100);
   
   wiringPiSetup();
   motor.init();
