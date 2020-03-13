@@ -17,7 +17,11 @@ class Sensor : public CppTimer {
 	
 	void timerEvent();
 	
-	void blinkLED(); 
+	void blinkLED();
+	
+	float getTemp();
+	
+	float tempC = 0;
 	
  private:
  

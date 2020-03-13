@@ -15,9 +15,6 @@ char devPath[128]; // Path to device
 char buf[256];     // Data from device
 char tmpData[6];   // Temp C * 1000 reported by device
 char path[] = "/sys/bus/w1/devices";
-bool TempReached = FALSE;
-bool TempRead = FALSE;
-extern float tempC;
 
 int fd;
 	
@@ -31,6 +28,10 @@ void Sensor::init(){
 	wiringPiSetup ();
 	pinMode (LED, OUTPUT) ;
  }
+  
+float Sensor::getTemp(){
+  return tempC;
+  }
   
   
    void Sensor::check(){
@@ -60,21 +61,19 @@ void Sensor::init(){
 	 
 	 // Read temp continuously
 	 
-	 TempRead = FALSE;
-	 
 	  int fd = open(devPath, O_RDONLY);
 	  
 	  if(fd == -1){
 		   perror ("Couldn't open the w1 device.");
 	  }
 	  
-	  if((numRead = read(fd, buf, 256)) > 0 && !TempRead){
+	  if((numRead = read(fd, buf, 256)) > 0){
 		   strncpy(tmpData, strstr(buf, "t=") + 2, 5);
 		   tempC = strtof(tmpData, NULL);
 		   printf("Device: %s  - ", dev);
 		   printf("Temp: %.3f C  ", tempC / 1000);
 		   printf("%.3f F\n\n", (tempC / 1000) * 9 / 5 + 32);
-		   TempRead = !TempRead;
+		  
 		}
 		
 	  close(fd);
