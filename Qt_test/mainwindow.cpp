@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     wiringPiSetup();
-    pinMode(5,OUTPUT);
+    pinMode(0,OUTPUT);
 }
 
 MainWindow::~MainWindow()
@@ -19,10 +19,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_ON_clicked()
 {
-    digitalWrite(5,HIGH);
+    digitalWrite(0,HIGH);
 }
 
 void MainWindow::on_OFF_clicked()
 {
-    digitalWrite(5,LOW);
+    digitalWrite(0,LOW);
 }

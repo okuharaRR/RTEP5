@@ -5,8 +5,8 @@
 #include <unistd.h>
 #include <time.h>
 #include <thread>
-#include "RealTime_Switch.h"
-#include "CppTimer.h"
+#include "header/RealTime_Switch.h"
+#include "header/CppTimer.h"
 #include "wiringPi.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -37,7 +37,7 @@ void MainWindow::on_GreenTea_clicked()
     // amount of tea leaves = 5 g
     // tea brew time = 2 min
 
-    float target = 80000;
+   // float target = 80000;
 
     // Turn on the heater
     Relay relay;
