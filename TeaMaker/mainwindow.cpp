@@ -5,8 +5,8 @@
 #include <unistd.h>
 #include <time.h>
 #include <thread>
-#include "RealTime_Switch.h"
-#include "CppTimer.h"
+#include "header/RealTime_Switch.h"
+#include "header/CppTimer.h"
 #include "wiringPi.h"
 
 MainWindow::MainWindow(QWidget *parent)
