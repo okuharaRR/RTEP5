@@ -21,7 +21,7 @@ void Motor:: run(){
   printf("Running in a thread\n");
 
   digitalWrite (CHIPEN, HIGH);
-  digitalWrite (DIR, HIGH);
+  digitalWrite (DIR, clockwise);
   int stepperPeriod = 200 / speed;
   int pulses = degrees / 0.9;
   std::this_thread::sleep_for(std::chrono::milliseconds(5));
@@ -33,7 +33,7 @@ void Motor:: run(){
     }
   
   std::this_thread::sleep_for(std::chrono::milliseconds(500));    
-  digitalWrite (DIR, LOW);
+  digitalWrite (DIR, !clockwise);
   
   for(int i = 0; i < pulses; i++){
     digitalWrite (STEP, HIGH);
