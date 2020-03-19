@@ -31,7 +31,7 @@ FORMS += \
 
 LIBS += -L/usr/local/lib -lwiringPi -lrt
 
-INCLUDEPATH	+= /usr/local/include
+INCLUDEPATH += /usr/local/include
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

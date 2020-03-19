@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/Switch_Test.dir/Switch_test.cpp.o  -o Switch_Test libSwitch.a -lwiringPi 
