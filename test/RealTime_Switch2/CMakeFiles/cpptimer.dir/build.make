@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch
+CMAKE_SOURCE_DIR = /home/mika/Documents/RTEP5/test/RealTime_Switch2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch
+CMAKE_BINARY_DIR = /home/mika/Documents/RTEP5/test/RealTime_Switch2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cpptimer.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/cpptimer.dir/flags.make
 
 CMakeFiles/cpptimer.dir/CppTimer.cpp.o: CMakeFiles/cpptimer.dir/flags.make
 CMakeFiles/cpptimer.dir/CppTimer.cpp.o: CppTimer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpptimer.dir/CppTimer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpptimer.dir/CppTimer.cpp.o -c /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CppTimer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mika/Documents/RTEP5/test/RealTime_Switch2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpptimer.dir/CppTimer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpptimer.dir/CppTimer.cpp.o -c /home/mika/Documents/RTEP5/test/RealTime_Switch2/CppTimer.cpp
 
 CMakeFiles/cpptimer.dir/CppTimer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpptimer.dir/CppTimer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CppTimer.cpp > CMakeFiles/cpptimer.dir/CppTimer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mika/Documents/RTEP5/test/RealTime_Switch2/CppTimer.cpp > CMakeFiles/cpptimer.dir/CppTimer.cpp.i
 
 CMakeFiles/cpptimer.dir/CppTimer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpptimer.dir/CppTimer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CppTimer.cpp -o CMakeFiles/cpptimer.dir/CppTimer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mika/Documents/RTEP5/test/RealTime_Switch2/CppTimer.cpp -o CMakeFiles/cpptimer.dir/CppTimer.cpp.s
 
 # Object files for target cpptimer
 cpptimer_OBJECTS = \
@@ -80,7 +80,7 @@ cpptimer_EXTERNAL_OBJECTS =
 libcpptimer.a: CMakeFiles/cpptimer.dir/CppTimer.cpp.o
 libcpptimer.a: CMakeFiles/cpptimer.dir/build.make
 libcpptimer.a: CMakeFiles/cpptimer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcpptimer.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mika/Documents/RTEP5/test/RealTime_Switch2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcpptimer.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/cpptimer.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpptimer.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/cpptimer.dir/clean:
 .PHONY : CMakeFiles/cpptimer.dir/clean
 
 CMakeFiles/cpptimer.dir/depend:
-	cd /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch /home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CMakeFiles/cpptimer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mika/Documents/RTEP5/test/RealTime_Switch2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mika/Documents/RTEP5/test/RealTime_Switch2 /home/mika/Documents/RTEP5/test/RealTime_Switch2 /home/mika/Documents/RTEP5/test/RealTime_Switch2 /home/mika/Documents/RTEP5/test/RealTime_Switch2 /home/mika/Documents/RTEP5/test/RealTime_Switch2/CMakeFiles/cpptimer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cpptimer.dir/depend
 

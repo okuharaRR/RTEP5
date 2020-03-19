@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/RealTime_Switch.cpp" "/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch/CMakeFiles/RealTime_Switch.dir/RealTime_Switch.cpp.o"
+  "/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch.cpp" "/home/mika/Documents/RTEP5/test/RealTime_Switch2/CMakeFiles/RealTime_Switch.dir/RealTime_Switch.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
