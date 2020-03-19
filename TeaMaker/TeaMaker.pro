@@ -29,7 +29,7 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
-LIBS += -L/usr/local/lib -lwiringPi
+LIBS += -L/usr/local/lib -lwiringPi -lrt
 
 INCLUDEPATH	+= /usr/local/include
 
