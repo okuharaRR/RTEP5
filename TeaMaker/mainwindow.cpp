@@ -66,7 +66,7 @@ void MainWindow::on_GreenTea_clicked()
     }
 
     sensor.stop();
-    sensor.blinkLED();
+    sensor.LEDon();
 
     // Turn off the heater
     relay.start(100000000, ONESHOT);

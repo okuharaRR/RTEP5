@@ -84,10 +84,14 @@ float Sensor::getTemp(){
   void Sensor::blinkLED(){
 	  printf ("Raspberry Pi blink\n") ;
   
-	  for (;;){
+      for (;;){
 		digitalWrite (LED, HIGH) ;	// On
 		delay (500) ;		        // mS
 		digitalWrite (LED, LOW) ;	// Off
 		delay (500) ;
 	  }
+  }
+
+  void Sensor::LEDon(){
+      digitalWrite (LED, HIGH) ;	// On
   }
