@@ -142,8 +142,8 @@ clean: CMakeFiles/RealTime_Switch.dir/clean
 # Target rules for target CMakeFiles/RealTime_Switch_Test.dir
 
 # All Build rule for target.
-CMakeFiles/RealTime_Switch_Test.dir/all: CMakeFiles/cpptimer.dir/all
 CMakeFiles/RealTime_Switch_Test.dir/all: CMakeFiles/RealTime_Switch.dir/all
+CMakeFiles/RealTime_Switch_Test.dir/all: CMakeFiles/cpptimer.dir/all
 	$(MAKE) -f CMakeFiles/RealTime_Switch_Test.dir/build.make CMakeFiles/RealTime_Switch_Test.dir/depend
 	$(MAKE) -f CMakeFiles/RealTime_Switch_Test.dir/build.make CMakeFiles/RealTime_Switch_Test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mika/Documents/RTEP5/test/RealTime_Switch2/CMakeFiles --progress-num=3,4 "Built target RealTime_Switch_Test"
