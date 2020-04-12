@@ -5,8 +5,10 @@
 #include <unistd.h>
 #include <time.h>
 #include <thread>
+#include "header/RealTime_Sensor.h"
 #include "header/RealTime_Switch.h"
 #include "header/CppTimer.h"
+#include "header/CppTimer_sensor.h"
 #include "wiringPi.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -37,7 +39,7 @@ void MainWindow::on_GreenTea_clicked()
     // amount of tea leaves = 5 g
     // tea brew time = 2 min
 
-    float target = 80000;
+    float target = 30000;
 
     // Turn on the heater
     Relay relay;
@@ -46,6 +48,25 @@ void MainWindow::on_GreenTea_clicked()
     // Dispense tea leaves in a thread
 
     // Sensor reading
+    Sensor sensor;
+
+    sensor.init();
+    sensor.check();
+
+    sensor.start(2000000000);
+
+    while (1) {
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+    //printf("Temp: %.3f C  ", sensor.getTemp() / 1000);
+    //printf("%.3f F\n\n", (sensor.getTemp() / 1000) * 9 / 5 + 32);
+
+    if (sensor.getTemp() > target){
+        break;
+      }
+    }
+
+    sensor.stop();
+    sensor.blinkLED();
 
     // Turn off the heater
     relay.start(100000000);
