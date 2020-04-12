@@ -48,15 +48,12 @@ void MainWindow::on_GreenTea_clicked()
 
     // Dispense tea leaves in a thread
     Motor motor(1, 27, 60);
-
     motor.init();
-
     motor.start();
     motor.join();
 
     // Sensor reading
     Sensor sensor;
-
     sensor.LEDon();
     sensor.init();
     sensor.check();
@@ -65,8 +62,6 @@ void MainWindow::on_GreenTea_clicked()
 
     while (1) {
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    //printf("Temp: %.3f C  ", sensor.getTemp() / 1000);
-    //printf("%.3f F\n\n", (sensor.getTemp() / 1000) * 9 / 5 + 32);
 
     if (sensor.getTemp() > target){
         break;
@@ -90,7 +85,7 @@ void MainWindow::on_GreenTea_clicked()
 
     // Tea brew time for 2 min
     fprintf(stdout,"Tea brew time ...\n");
-    std::this_thread::sleep_for(std::chrono::minutes(2));
+    std::this_thread::sleep_for(std::chrono::minutes(1));
 
     // Open valve 2
     Valve2 valve2;
@@ -100,6 +95,7 @@ void MainWindow::on_GreenTea_clicked()
     valve2.start(100000000, ONESHOT);
     std::this_thread::sleep_for(std::chrono::seconds(2));
 }
+
 
 void MainWindow::on_BlackTea_clicked()
 {
@@ -116,26 +112,20 @@ void MainWindow::on_BlackTea_clicked()
     relay.on();
 
     // Dispense tea leaves in a thread
-    Motor motor(0, 27, 60);
-
+    Motor motor(1, 27, 60);
     motor.init();
-
     motor.start();
     motor.join();
 
     // Sensor reading
     Sensor sensor;
-
     sensor.LEDon();
     sensor.init();
     sensor.check();
-
     sensor.start(2000000000, PERIODIC);
 
     while (1) {
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    //printf("Temp: %.3f C  ", sensor.getTemp() / 1000);
-    //printf("%.3f F\n\n", (sensor.getTemp() / 1000) * 9 / 5 + 32);
 
     if (sensor.getTemp() > target){
         break;
@@ -159,7 +149,7 @@ void MainWindow::on_BlackTea_clicked()
 
     // Tea brew time for 2 min
     fprintf(stdout,"Tea brew time ...\n");
-    std::this_thread::sleep_for(std::chrono::minutes(3));
+    std::this_thread::sleep_for(std::chrono::minutes(1));
 
     // Open valve 2
     Valve2 valve2;
