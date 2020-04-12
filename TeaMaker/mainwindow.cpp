@@ -109,4 +109,63 @@ void MainWindow::on_BlackTea_clicked()
     // amount of tea leaves = 5 g
     // tea brew time = 3 min
 
+    float target = 30000;
+
+    // Turn on the heater
+    Relay relay;
+    relay.on();
+
+    // Dispense tea leaves in a thread
+    Motor motor(0, 27, 60);
+
+    motor.init();
+
+    motor.start();
+    motor.join();
+
+    // Sensor reading
+    Sensor sensor;
+
+    sensor.LEDon();
+    sensor.init();
+    sensor.check();
+
+    sensor.start(2000000000, PERIODIC);
+
+    while (1) {
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+    //printf("Temp: %.3f C  ", sensor.getTemp() / 1000);
+    //printf("%.3f F\n\n", (sensor.getTemp() / 1000) * 9 / 5 + 32);
+
+    if (sensor.getTemp() > target){
+        break;
+      }
+    }
+
+    sensor.stop();
+    sensor.LEDoff();
+
+    // Turn off the heater
+    relay.start(100000000, ONESHOT);
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+
+    // Open valve 1
+    Valve1 valve1;
+    valve1.on();
+
+    // Close Valve 2
+    valve1.start(100000000, ONESHOT);
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+
+    // Tea brew time for 2 min
+    fprintf(stdout,"Tea brew time ...\n");
+    std::this_thread::sleep_for(std::chrono::minutes(3));
+
+    // Open valve 2
+    Valve2 valve2;
+    valve2.on();
+
+    // Close valve 2
+    valve2.start(100000000, ONESHOT);
+    std::this_thread::sleep_for(std::chrono::seconds(2));
 }
