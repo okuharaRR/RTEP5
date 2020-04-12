@@ -21,6 +21,8 @@ class Sensor : public CppTimer {
 
     void LEDon();
 
+    void LEDoff();
+
 	float getTemp();
 	
 	float tempC = 0;

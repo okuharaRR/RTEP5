@@ -95,3 +95,7 @@ float Sensor::getTemp(){
   void Sensor::LEDon(){
       digitalWrite (LED, HIGH) ;	// On
   }
+
+  void Sensor::LEDoff(){
+      digitalWrite (LED, LOW) ;	// On
+  }

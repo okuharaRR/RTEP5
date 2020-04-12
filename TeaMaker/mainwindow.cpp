@@ -50,6 +50,7 @@ void MainWindow::on_GreenTea_clicked()
     // Sensor reading
     Sensor sensor;
 
+    sensor.LEDon();
     sensor.init();
     sensor.check();
 
@@ -66,7 +67,7 @@ void MainWindow::on_GreenTea_clicked()
     }
 
     sensor.stop();
-    sensor.LEDon();
+    sensor.LEDoff();
 
     // Turn off the heater
     relay.start(100000000, ONESHOT);
