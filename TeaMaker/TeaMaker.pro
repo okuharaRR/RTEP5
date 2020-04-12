@@ -20,13 +20,16 @@ SOURCES += \
     mainwindow.cpp \
     source/CppTimer.cpp \
     source/RealTime_Switch.cpp \
-    source/RealTime_Sensor.cpp
+    source/RealTime_Sensor.cpp \
+    source/RealTime_Motor.cpp
 
 HEADERS += \
     mainwindow.h \
     header/CppTimer.h \
+    header/CppThread.h \
     header/RealTime_Switch.h \
-    header/RealTime_Sensor.h
+    header/RealTime_Sensor.h \
+    header/RealTime_Motor.h \
 
 FORMS += \
     mainwindow.ui

@@ -5,10 +5,11 @@
 #include <unistd.h>
 #include <time.h>
 #include <thread>
+#include "header/CppTimer.h"
+#include "header/CppThread.h"
 #include "header/RealTime_Sensor.h"
 #include "header/RealTime_Switch.h"
-#include "header/CppTimer.h"
-#include "header/CppTimer_sensor.h"
+#include "header/RealTime_Motor.h"
 #include "wiringPi.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -46,6 +47,12 @@ void MainWindow::on_GreenTea_clicked()
     relay.on();
 
     // Dispense tea leaves in a thread
+    Motor motor(1, 27, 60);
+
+    motor.init();
+
+    motor.start();
+    motor.join();
 
     // Sensor reading
     Sensor sensor;
