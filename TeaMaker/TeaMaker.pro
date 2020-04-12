@@ -29,9 +29,9 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
-LIBS += -L/usr/local/lib -lwiringPi -lrt
+LIBS += -L/usr/local/lib -lwiringPi
 
-INCLUDEPATH += /usr/local/include
+INCLUDEPATH	+= /usr/local/include
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

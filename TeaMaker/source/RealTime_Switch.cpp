@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <wiringPi.h>
-#include "../header/RealTime_Switch.h"
-#include "../header/CppTimer.h"
+#include "RealTime_Switch.h"
+#include "CppTimer.h"
 
 void Relay::on(){
 	digitalWrite (relay, HIGH);

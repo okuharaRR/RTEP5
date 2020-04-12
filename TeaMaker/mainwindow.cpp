@@ -37,7 +37,7 @@ void MainWindow::on_GreenTea_clicked()
     // amount of tea leaves = 5 g
     // tea brew time = 2 min
 
-   // float target = 80000;
+    float target = 80000;
 
     // Turn on the heater
     Relay relay;
@@ -52,15 +52,24 @@ void MainWindow::on_GreenTea_clicked()
     std::this_thread::sleep_for(std::chrono::seconds(2));
 
     // Open valve 1
+    Valve1 valve1;
+    valve1.on();
 
     // Close Valve 2
+    valve1.start(100000000);
+    std::this_thread::sleep_for(std::chrono::seconds(2));
 
-    // Tea brew time
+    // Tea brew time for 2 min
+    fprintf(stdout,"Tea brew time ...\n");
+    std::this_thread::sleep_for(std::chrono::minutes(2));
 
     // Open valve 2
+    Valve2 valve2;
+    valve2.on();
 
     // Close valve 2
-
+    valve2.start(100000000);
+    std::this_thread::sleep_for(std::chrono::seconds(2));
 }
 
 void MainWindow::on_BlackTea_clicked()
