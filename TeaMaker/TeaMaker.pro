@@ -19,14 +19,12 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     source/CppTimer.cpp \
-    source/CppTimer_sensor.cpp \
     source/RealTime_Switch.cpp \
     source/RealTime_Sensor.cpp
 
 HEADERS += \
     mainwindow.h \
     header/CppTimer.h \
-    header/CppTimer_sensor.h \
     header/RealTime_Switch.h \
     header/RealTime_Sensor.h
 

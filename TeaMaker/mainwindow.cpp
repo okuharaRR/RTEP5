@@ -53,7 +53,7 @@ void MainWindow::on_GreenTea_clicked()
     sensor.init();
     sensor.check();
 
-    sensor.start(2000000000);
+    sensor.start(2000000000, PERIODIC);
 
     while (1) {
     std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -69,7 +69,7 @@ void MainWindow::on_GreenTea_clicked()
     sensor.blinkLED();
 
     // Turn off the heater
-    relay.start(100000000);
+    relay.start(100000000, ONESHOT);
     std::this_thread::sleep_for(std::chrono::seconds(2));
 
     // Open valve 1
@@ -77,7 +77,7 @@ void MainWindow::on_GreenTea_clicked()
     valve1.on();
 
     // Close Valve 2
-    valve1.start(100000000);
+    valve1.start(100000000, ONESHOT);
     std::this_thread::sleep_for(std::chrono::seconds(2));
 
     // Tea brew time for 2 min
@@ -89,7 +89,7 @@ void MainWindow::on_GreenTea_clicked()
     valve2.on();
 
     // Close valve 2
-    valve2.start(100000000);
+    valve2.start(100000000, ONESHOT);
     std::this_thread::sleep_for(std::chrono::seconds(2));
 }
 
