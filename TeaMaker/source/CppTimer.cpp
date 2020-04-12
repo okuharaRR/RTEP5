@@ -1,4 +1,4 @@
-#include "header/CppTimer.h"
+#include "./header/CppTimer.h"
 
 /**
  * GNU GENERAL PUBLIC LICENSE
