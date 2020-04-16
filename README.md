@@ -53,4 +53,4 @@ For software documentation, please click [here]. INSERT LINK!
 
 You can find our website [here](https://rtesps.wixsite.com/mytea). 
 
-Also, be sure to like our [Facebook page]() and follow our [Twitter]() to get all the latest updates!
+Also, be sure to like our [Facebook page](https://www.facebook.com/MyTea-%E8%8C%B6-114110590136382/) and follow our [Twitter](https://twitter.com/MyTea76121892) to get all the latest updates!
