@@ -1,5 +1,0 @@
-/home/mika/Documents/RTEP5/test/RealTime_Sensor/CMakeFiles/rebuild_cache.dir
-/home/mika/Documents/RTEP5/test/RealTime_Sensor/CMakeFiles/edit_cache.dir
-/home/mika/Documents/RTEP5/test/RealTime_Sensor/CMakeFiles/cpptimer.dir
-/home/mika/Documents/RTEP5/test/RealTime_Sensor/CMakeFiles/RealTime_Sensor.dir
-/home/mika/Documents/RTEP5/test/RealTime_Sensor/CMakeFiles/RealTime_Sensor_Test.dir

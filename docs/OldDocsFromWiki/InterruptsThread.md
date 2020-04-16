@@ -1,4 +1,0 @@
-- [WiringPi](http://wiringpi.com/reference/priority-interrupts-and-threads/)
-- [POSIX Thread 1](https://docs.oracle.com/cd/E19253-01/819-0390/tlib-12926/index.html)
-- [POSIX Thread 2](https://computing.llnl.gov/tutorials/pthreads/)
-- [Introduction to parallel computing](https://computing.llnl.gov/tutorials/parallel_comp/)

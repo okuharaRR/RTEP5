@@ -1,4 +1,0 @@
-/home/mika/Documents/RTEP5/test/Switch/build/CMakeFiles/rebuild_cache.dir
-/home/mika/Documents/RTEP5/test/Switch/build/CMakeFiles/edit_cache.dir
-/home/mika/Documents/RTEP5/test/Switch/build/CMakeFiles/Switch.dir
-/home/mika/Documents/RTEP5/test/Switch/build/CMakeFiles/Switch_Test.dir

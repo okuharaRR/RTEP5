@@ -1,2 +1,0 @@
-- [Installation](https://forum.qt.io/topic/105817/qt-creator-on-raspberry-pi4-4gb-ram/4)
-- [Tutorial (Raspberry Pi + Qt + WiringPi)](https://www.youtube.com/watch?v=srgCRkyg5Zk)

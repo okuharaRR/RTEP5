@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/Sensor_Test.dir/Sensor_test.cpp.o  -o Sensor_Test libSensor.a -lwiringPi 

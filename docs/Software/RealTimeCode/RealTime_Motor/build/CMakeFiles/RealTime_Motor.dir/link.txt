@@ -1,2 +1,0 @@
-/usr/bin/ar qc libRealTime_Motor.a  CMakeFiles/RealTime_Motor.dir/RealTime_Motor.cpp.o
-/usr/bin/ranlib libRealTime_Motor.a
