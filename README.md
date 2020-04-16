@@ -49,7 +49,7 @@ _Covid-19 has caused a significant distruption for our project and a complete de
 
 For further information about our project, have a look at our [Wiki](https://github.com/okuharaRR/RTEP5/wiki).
 
-For software documentation, please click [here]. INSERT LINK!
+For software documentation, please click [here](https://okuhararr.github.io/RTEP5/).
 
 You can find our website [here](https://rtesps.wixsite.com/mytea). 
 
