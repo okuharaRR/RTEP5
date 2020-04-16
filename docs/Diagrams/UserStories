@@ -1,0 +1,46 @@
+ID: 1
+PRIORITY: 1
+
+As a tea drinker, I want to select from a variety of teas so that I can enjoy different teas throughout the day.
+
+------------
+
+ID: 2
+PRIORITY: 2
+
+As an expert tea drinker, I want to customise the tea making process so that I can make the tea taste just how I like it.
+
+------------
+
+ID: 3
+PRIORITY: 3
+
+As a novice tea drinker, I want to see a recommendation for an appropriate tea for the time of day, so that I can make an easier choice.
+
+------------
+
+ID: 4
+PRIORITY: 2
+
+As someone who is very busy, I want my tea ready as quickly as possible so that I can go on with my day.
+
+------------
+
+ID: 5
+PRIORITY: 3
+
+As a novice tea drinker, I want to see information about the qualities of the different teas so that I can make a better choice.
+
+------------
+
+ID: 6
+PRIORITY: 2
+
+As an expert drinker, I want to see the water temperature and remaining brewing time in real time.
+
+------------
+
+ID: 7
+PRIORITY: 3
+
+As a user of a commercial product, I want to see information about the product - HW and SW revision, etc.

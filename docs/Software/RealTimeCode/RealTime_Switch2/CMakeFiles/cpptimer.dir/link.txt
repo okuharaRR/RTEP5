@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcpptimer.a  CMakeFiles/cpptimer.dir/CppTimer.cpp.o
+/usr/bin/ranlib libcpptimer.a

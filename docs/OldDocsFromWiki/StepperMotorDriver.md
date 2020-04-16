@@ -1,0 +1,6 @@
+- [DRV8825](https://uk.rs-online.com/web/p/motor-driver-ics/7422873/)
+- [DATASHEET](http://www.ti.com/lit/ds/symlink/drv8825.pdf)
+- [Sample C++ code](https://crish4cks.net/a-simple-c-library-to-drive-a-stepper-motor-using-the-raspberry-pi/)
+- [Tutorial 1](https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUNOqIUCWr_k%26feature%3Dshare&h=AT0MrWCej2fLjVkq-KFooIa1_Rpc3qO1ETq1c4adf6BJtMjrVQerzx80IjT_aYgEKn2ErGfaZKERZLYqOZhL-_5SxJyqKgrbgZsU91bXy3GfabriTvjoYhOq41nPj-OFHsZb)
+- [Tutorial 2](https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dc_VREVX8WxA%26feature%3Dshare&h=AT3a3C9SVSOjPHBth5IQTI-0g4DCBSX08WyyGaZePnT84DAjqz7C1yNbDqw7byitS3E14bjUtJmbASGBBjckW27XjDs_Pm1wYQ4aH2aZj4kCX6rhzPo8eDnzApU5ZwSftbZI)
+- [Tutorial 3](https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQyKAZhJFGMg%26feature%3Dshare&h=AT3jm_yCRW9iMoJ62_tHnzSkfnkXBKUzXLngbs2hdaCfdVIxdSsnf-1_wQI9OO32peq5dfSI1PFBZj0uSXeumv8BVD_iIewJPG4mpIwUvLz-78Z4iC5F3KlXwOqvihjLU3Bl)

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/RealTime_Sensor_Test.dir/RealTime_Sensor_test.cpp.o  -o RealTime_Sensor_Test libRealTime_Sensor.a -lwiringPi libcpptimer.a -lrt 

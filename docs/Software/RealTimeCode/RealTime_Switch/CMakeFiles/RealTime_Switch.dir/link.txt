@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRealTime_Switch.a  CMakeFiles/RealTime_Switch.dir/RealTime_Switch.cpp.o
+/usr/bin/ranlib libRealTime_Switch.a
