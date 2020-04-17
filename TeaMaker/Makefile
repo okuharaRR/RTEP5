@@ -53,11 +53,15 @@ OBJECTS_DIR   = ./
 SOURCES       = main.cpp \
 		mainwindow.cpp \
 		source/CppTimer.cpp \
-		source/RealTime_Switch.cpp moc_mainwindow.cpp
+		source/RealTime_Switch.cpp \
+		source/RealTime_Sensor.cpp \
+		source/RealTime_Motor.cpp moc_mainwindow.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		CppTimer.o \
 		RealTime_Switch.o \
+		RealTime_Sensor.o \
+		RealTime_Motor.o \
 		moc_mainwindow.o
 DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/common/unix.conf \
@@ -135,10 +139,15 @@ DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/lex.prf \
 		TeaMaker.pro mainwindow.h \
 		header/CppTimer.h \
-		header/RealTime_Switch.h main.cpp \
+		header/CppThread.h \
+		header/RealTime_Switch.h \
+		header/RealTime_Sensor.h \
+		header/RealTime_Motor.h main.cpp \
 		mainwindow.cpp \
 		source/CppTimer.cpp \
-		source/RealTime_Switch.cpp
+		source/RealTime_Switch.cpp \
+		source/RealTime_Sensor.cpp \
+		source/RealTime_Motor.cpp
 QMAKE_TARGET  = TeaMaker
 DESTDIR       = 
 TARGET        = TeaMaker
@@ -322,8 +331,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents mainwindow.h header/CppTimer.h header/RealTime_Switch.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp mainwindow.cpp source/CppTimer.cpp source/RealTime_Switch.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents mainwindow.h header/CppTimer.h header/CppThread.h header/RealTime_Switch.h header/RealTime_Sensor.h header/RealTime_Motor.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp mainwindow.cpp source/CppTimer.cpp source/RealTime_Switch.cpp source/RealTime_Sensor.cpp source/RealTime_Motor.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents mainwindow.ui $(DISTDIR)/
 
 
@@ -390,8 +399,11 @@ main.o: main.cpp mainwindow.h
 
 mainwindow.o: mainwindow.cpp mainwindow.h \
 		ui_mainwindow.h \
+		header/CppTimer.h \
+		header/CppThread.h \
+		header/RealTime_Sensor.h \
 		header/RealTime_Switch.h \
-		header/CppTimer.h
+		header/RealTime_Motor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
 CppTimer.o: source/CppTimer.cpp header/CppTimer.h
@@ -400,6 +412,15 @@ CppTimer.o: source/CppTimer.cpp header/CppTimer.h
 RealTime_Switch.o: source/RealTime_Switch.cpp header/RealTime_Switch.h \
 		header/CppTimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o RealTime_Switch.o source/RealTime_Switch.cpp
+
+RealTime_Sensor.o: source/RealTime_Sensor.cpp header/RealTime_Sensor.h \
+		header/CppTimer.h \
+		header/CppTimer_sensor.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o RealTime_Sensor.o source/RealTime_Sensor.cpp
+
+RealTime_Motor.o: source/RealTime_Motor.cpp header/RealTime_Motor.h \
+		header/CppThread.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o RealTime_Motor.o source/RealTime_Motor.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
