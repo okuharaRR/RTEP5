@@ -14,7 +14,21 @@ _With so many coffee machines available to satisfy every variety of coffee that 
 
 ## Installation
 
-Mika-san's part...
+On the terminal of a Raspberry Pi type the following:
+
+```git clone https://github.com/okuharaRR/RTEP5.git```
+
+```cd TeaMaker```
+
+```qmake```
+
+```make```
+
+```./TeaMaker```
+
+QT and wiringPi are required.
+
+If ```make``` gives an error, try ```make clean``` first and ```make```.
 
 ## Using the application
 
