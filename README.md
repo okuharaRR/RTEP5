@@ -16,17 +16,19 @@ _With so many coffee machines available to satisfy every variety of coffee that 
 
 On the terminal of a Raspberry Pi type the following:
 
-git clone https://github.com/Pschiee/Perfect-Colour.git
+git clone https://github.com/okuharaRR/RTEP5.git
 
-cd Software
+```cd TeaMaker```
 
-qmake
+```qmake```
 
-make
+```make```
 
-./AppPerfectColour
+```./TeaMaker```
 
 QT and wiringPi are required.
+
+if ```make``` gives an error, try ```make clean``` first and ```make```.
 
 ## Using the application
 
