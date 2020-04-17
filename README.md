@@ -16,7 +16,7 @@ _With so many coffee machines available to satisfy every variety of coffee that 
 
 On the terminal of a Raspberry Pi type the following:
 
-git clone https://github.com/okuharaRR/RTEP5.git
+```git clone https://github.com/okuharaRR/RTEP5.git```
 
 ```cd TeaMaker```
 
