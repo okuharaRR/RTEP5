@@ -43,7 +43,9 @@ That's it!
 
 ## Demonstration
 
-_Covid-19 has caused a significant distruption for our project and a complete demonstartor cannot be built to date. More information about the impact of the outbreak can be found [here]() INSERT LINK!_
+_Covid-19 has caused a significant distruption for our project and a complete demonstartor cannot be built to date. More information about the impact of the outbreak can be found [here](https://github.com/okuharaRR/RTEP5/wiki/Impact-of-Covid-19)._
+
+A video demonstration can be found [here](https://youtu.be/PhV0StMdRJc).
 
 
 ## Team Structure
