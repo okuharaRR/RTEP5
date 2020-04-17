@@ -28,7 +28,7 @@ On the terminal of a Raspberry Pi type the following:
 
 QT and wiringPi are required.
 
-if ```make``` gives an error, try ```make clean``` first and ```make```.
+If ```make``` gives an error, try ```make clean``` first and ```make```.
 
 ## Using the application
 
