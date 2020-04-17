@@ -1,0 +1,4 @@
+[submodule "Docs"]
+	path = Docs
+	url = http://github.com/okuharaRR/RTEP5.git
+	branch = gh-pages
