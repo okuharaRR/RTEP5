@@ -34,7 +34,7 @@ If ```make``` gives an error, try ```make clean``` first and ```make```.
 
 Once a finished product is made, using it will be straightforward:
 
-1. Fill up the kettle with water and make sure the switch in the back is in the ON position. (_The need for a mechanical switch is for user safety_.
+1. Fill up the kettle with water and make sure the switch in the back is in the ON position. (_The need for a mechanical switch is for user safety_.)
 2. Fill up the dispenser with tea leaves.
 3. Once done, turn on the RPI and launch the GUI application.
 4. Follow the guide [here](https://github.com/okuharaRR/RTEP5/wiki/User-Manual).
