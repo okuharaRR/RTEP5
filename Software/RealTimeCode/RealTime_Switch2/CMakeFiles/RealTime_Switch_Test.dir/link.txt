@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/RealTime_Switch_Test.dir/RealTime_Switch_test.cpp.o  -o RealTime_Switch_Test libRealTime_Switch.a -lwiringPi libcpptimer.a -lrt 

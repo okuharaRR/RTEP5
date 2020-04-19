@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mika/Documents/RTEP5/test/RealTime_Switch/RealTime_Switch_test.cpp" "/home/mika/Documents/RTEP5/test/RealTime_Switch/CMakeFiles/RealTime_Switch_Test.dir/RealTime_Switch_test.cpp.o"
+  "/home/mika/Documents/RTEP5/test/RealTime_Switch2/RealTime_Switch_test.cpp" "/home/mika/Documents/RTEP5/test/RealTime_Switch2/CMakeFiles/RealTime_Switch_Test.dir/RealTime_Switch_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -14,8 +14,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/mika/Documents/RTEP5/test/RealTime_Switch/CMakeFiles/RealTime_Switch.dir/DependInfo.cmake"
-  "/home/mika/Documents/RTEP5/test/RealTime_Switch/CMakeFiles/cpptimer.dir/DependInfo.cmake"
+  "/home/mika/Documents/RTEP5/test/RealTime_Switch2/CMakeFiles/RealTime_Switch.dir/DependInfo.cmake"
+  "/home/mika/Documents/RTEP5/test/RealTime_Switch2/CMakeFiles/cpptimer.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
